@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#08263b"><meta name="mobile-web-app-capable" content="yes">
+<title>Gugu Kingdom: Arctic War</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="splash" class="splash">
+ <div class="snowfield" id="snow"></div>
+ <div class="brand">GUGU <span>KINGDOM</span></div><div class="subbrand">A R C T I C &nbsp; W A R</div>
+ <div class="mascot">🐧</div><div class="ice">❄</div>
+ <div class="load-label" id="loadLabel">MENYIAPKAN KERAJAAN...</div>
+ <div class="load-track"><div id="loadFill"></div></div><div id="loadPct">0%</div>
+</div>
+<main id="game" class="hidden">
+ <header class="topbar">
+  <div class="gamebrand"><span class="brandmark">🐧</span><div><b>GUGU KINGDOM</b><small>ARCTIC WAR</small></div></div>
+  <div class="resources"><div>🪙 <b id="gold">8.420K</b></div><div>💎 <b id="crystal">5.780K</b></div><div>🧱 <b id="ore">2.340K</b></div></div>
+ </header>
+ <section class="world-wrap"><canvas id="world"></canvas><div class="map-hint">GESER UNTUK JELAJAH · CUBIT UNTUK ZOOM</div>
+  <div class="island-tag">❄ KERAJAAN ES · LV. 7</div>
+ </section>
+ <div class="notice" id="notice">Kerajaanmu berkembang. Pilih bangunan untuk mengelola.</div>
+ <nav class="actions">
+  <button data-act="build"><i>🏗️</i><span>BANGUN</span></button>
+  <button data-act="upgrade"><i>⬆️</i><span>UPGRADE</span></button>
+  <button data-act="heroes"><i>🐧</i><span>HERO</span></button>
+  <button data-act="train"><i>🛡️</i><span>PASUKAN</span></button>
+  <button data-act="attack"><i>⚔️</i><span>SERANG</span></button>
+ </nav>
+ <div class="modal hidden" id="modal"><div class="panel"><button class="x" id="close">✕</button><div class="panel-kicker">GUGU KINGDOM</div><h2 id="modalTitle">Bangunan</h2><p id="modalText"></p><div id="modalButtons"></div></div></div>
+</main>
+<script src="game.js"></script>
+</body></html>

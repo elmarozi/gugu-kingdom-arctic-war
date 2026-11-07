@@ -1,0 +1,17 @@
+{
+  "name": "gugu-kingdom-arctic-war",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gugu Kingdom Arctic War mobile strategy game",
+  "scripts": {
+    "build": "node scripts/verify-build.js",
+    "android:sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
